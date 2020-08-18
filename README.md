@@ -27,6 +27,10 @@ This is my attempt at creating a reusable board
 
 This schematic and associated designs and files are provided without any guarentee of safety. Please do your research and use at your own risk.
 
+## Preview
+
+<img src="https://i.imgur.com/auZikO8.png" alt="screenshot of pcb, schematic and rendered 3D model of power entry module" />
+
 ## Thanks and of note
 
 This design in heavily inspirited by [Pete Millett's](https://www.pmillett.com) NuClassD power supply - Please check out his work and consider buying from him.
