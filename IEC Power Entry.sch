@@ -1,0 +1,193 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L V80212MS02Q:V80212MS02Q S1
+U 1 1 5F3BD35F
+P 5250 3000
+F 0 "S1" H 5250 3481 50  0000 C CNN
+F 1 "V80212MS02Q" H 5250 3390 50  0000 C CNN
+F 2 "V80212MS02Q:SW_V80212MS02Q" H 5250 3000 50  0001 L BNN
+F 3 "C&K" H 5250 3000 50  0001 L BNN
+F 4 "N/A" H 5250 3000 50  0001 L BNN "Field4"
+F 5 "15.75 mm" H 5250 3000 50  0001 L BNN "Field5"
+F 6 "Manufacturer Recommendations" H 5250 3000 50  0001 L BNN "Field6"
+	1    5250 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH1
+U 1 1 5F3C2FF6
+P 6150 2550
+F 0 "TH1" H 5997 2504 50  0000 R CNN
+F 1 "NTC Inrush Limiter" H 5997 2595 50  0000 R CNN
+F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" H 6150 2600 50  0001 C CNN
+F 3 "~" H 6150 2600 50  0001 C CNN
+	1    6150 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Variable Rv1
+U 1 1 5F3CD17B
+P 5800 2300
+F 0 "Rv1" V 5555 2300 50  0000 C CNN
+F 1 "MOV" V 5646 2300 50  0000 C CNN
+F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" V 5730 2300 50  0001 C CNN
+F 3 "~" H 5800 2300 50  0001 C CNN
+	1    5800 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J1
+U 1 1 5F3D1820
+P 7350 2400
+F 0 "J1" V 7350 2050 50  0000 L CNN
+F 1 "Transformer Primary" V 7450 2150 50  0000 L TNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00289_1x04_P5.08mm_Horizontal" H 7350 2400 50  0001 C CNN
+F 3 "~" H 7350 2400 50  0001 C CNN
+	1    7350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L DD21.0121.1111:DD21.0121.1111 PowerEntry1
+U 1 1 5F3BAA35
+P 3650 2500
+F 0 "PowerEntry1" H 3659 3077 50  0000 C CNN
+F 1 "DD21" H 3659 2986 50  0000 C CNN
+F 2 "DD21.0121:SCHURTER_DD21.0121.1111" H 3650 2500 50  0001 L BNN
+F 3 "Schurter" H 3650 2500 50  0001 L BNN
+	1    3650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH2
+U 1 1 5F3D568E
+P 6150 3450
+F 0 "TH2" H 6248 3404 50  0000 L CNN
+F 1 "NTC Inrush Limiter" H 6248 3495 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" H 6150 3500 50  0001 C CNN
+F 3 "~" H 6150 3500 50  0001 C CNN
+	1    6150 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Variable RRv2
+U 1 1 5F3D7E0C
+P 5800 3200
+F 0 "RRv2" V 5555 3200 50  0000 C CNN
+F 1 "MOV" V 5646 3200 50  0000 C CNN
+F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" V 5730 3200 50  0001 C CNN
+F 3 "~" H 5800 3200 50  0001 C CNN
+	1    5800 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 2400 6150 2300
+Wire Wire Line
+	6150 2300 7150 2300
+Wire Wire Line
+	4650 3100 4950 3100
+Connection ~ 4650 2300
+Wire Wire Line
+	4950 3300 4800 3300
+Wire Wire Line
+	4800 3300 4800 2900
+Wire Wire Line
+	4800 2900 4950 2900
+Wire Wire Line
+	4650 2300 4650 3100
+Wire Wire Line
+	5550 2800 6150 2800
+Wire Wire Line
+	6650 2800 6650 2400
+Wire Wire Line
+	6650 2400 7150 2400
+Wire Wire Line
+	6800 3200 6800 2500
+Wire Wire Line
+	6800 2500 7150 2500
+Wire Wire Line
+	4650 2300 5650 2300
+Wire Wire Line
+	5950 2300 6150 2300
+Connection ~ 6150 2300
+Wire Wire Line
+	6150 2700 6150 2800
+Connection ~ 6150 2800
+Wire Wire Line
+	6150 2800 6650 2800
+Wire Wire Line
+	5550 3200 5650 3200
+Wire Wire Line
+	5950 3200 6150 3200
+Wire Wire Line
+	6150 3300 6150 3200
+Connection ~ 6150 3200
+Wire Wire Line
+	6150 3200 6800 3200
+Wire Wire Line
+	6950 3650 6950 2600
+Wire Wire Line
+	6950 2600 7150 2600
+Wire Wire Line
+	6150 3600 6150 3650
+Wire Wire Line
+	6150 3650 6950 3650
+Wire Wire Line
+	4250 2500 4350 2500
+Wire Wire Line
+	4250 2300 4650 2300
+Wire Wire Line
+	4250 2700 4500 2700
+Wire Wire Line
+	4500 2700 4500 3650
+Wire Wire Line
+	4500 3650 6150 3650
+Connection ~ 4500 2700
+Wire Wire Line
+	4500 2700 4950 2700
+Connection ~ 6150 3650
+$Comp
+L Mechanical:MountingHole_Pad P2
+U 1 1 5F3FB5FA
+P 3550 3550
+F 0 "P2" V 3596 3700 50  0001 L CNN
+F 1 "Chassis Ground" V 3695 3553 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3550 3550 50  0001 C CNN
+F 3 "~" H 3550 3550 50  0001 C CNN
+	1    3550 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad P1
+U 1 1 5F3FBEF4
+P 3550 3250
+F 0 "P1" V 3787 3253 50  0001 C CNN
+F 1 "MountingHole_Pad" V 3695 3253 50  0000 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad" H 3550 3250 50  0001 C CNN
+F 3 "~" H 3550 3250 50  0001 C CNN
+	1    3550 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 3250 4350 3250
+Wire Wire Line
+	4350 2500 4350 3250
+Wire Wire Line
+	3650 3550 4350 3550
+Wire Wire Line
+	4350 3550 4350 3250
+Connection ~ 4350 3250
+$EndSCHEMATC
