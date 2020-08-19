@@ -30,24 +30,24 @@ $EndComp
 $Comp
 L Device:Thermistor_NTC TH1
 U 1 1 5F3C2FF6
-P 6600 3500
-F 0 "TH1" H 6447 3454 50  0000 R CNN
-F 1 "NTC Inrush Limiter" H 6447 3545 50  0000 R CNN
-F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" H 6600 3550 50  0001 C CNN
-F 3 "~" H 6600 3550 50  0001 C CNN
-	1    6600 3500
-	-1   0    0    1   
+P 6250 3250
+F 0 "TH1" V 5960 3250 50  0000 C CNN
+F 1 "NTC Inrush Limiter" V 6051 3250 50  0000 C CNN
+F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" H 6250 3300 50  0001 C CNN
+F 3 "~" H 6250 3300 50  0001 C CNN
+	1    6250 3250
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Variable Rv1
 U 1 1 5F3CD17B
-P 6250 3250
-F 0 "Rv1" V 6005 3250 50  0000 C CNN
-F 1 "MOV" V 6096 3250 50  0000 C CNN
-F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" V 6180 3250 50  0001 C CNN
-F 3 "~" H 6250 3250 50  0001 C CNN
-	1    6250 3250
-	0    1    1    0   
+P 6600 3500
+F 0 "Rv1" H 6728 3546 50  0000 L CNN
+F 1 "MOV" H 6728 3455 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" V 6530 3500 50  0001 C CNN
+F 3 "~" H 6600 3500 50  0001 C CNN
+	1    6600 3500
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J1
@@ -74,24 +74,24 @@ $EndComp
 $Comp
 L Device:Thermistor_NTC TH2
 U 1 1 5F3D568E
-P 6600 4400
-F 0 "TH2" H 6698 4354 50  0000 L CNN
-F 1 "NTC Inrush Limiter" H 6698 4445 50  0000 L CNN
-F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" H 6600 4450 50  0001 C CNN
-F 3 "~" H 6600 4450 50  0001 C CNN
-	1    6600 4400
-	-1   0    0    1   
+P 6250 4150
+F 0 "TH2" V 6485 4150 50  0000 C CNN
+F 1 "NTC Inrush Limiter" V 6394 4150 50  0000 C CNN
+F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" H 6250 4200 50  0001 C CNN
+F 3 "~" H 6250 4200 50  0001 C CNN
+	1    6250 4150
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Variable RRv2
 U 1 1 5F3D7E0C
-P 6250 4150
-F 0 "RRv2" V 6005 4150 50  0000 C CNN
-F 1 "MOV" V 6096 4150 50  0000 C CNN
-F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" V 6180 4150 50  0001 C CNN
-F 3 "~" H 6250 4150 50  0001 C CNN
-	1    6250 4150
-	0    1    1    0   
+P 6600 4400
+F 0 "RRv2" H 6728 4446 50  0000 L CNN
+F 1 "MOV" H 6728 4355 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D9mm_W6.1mm_P5mm" V 6530 4400 50  0001 C CNN
+F 3 "~" H 6600 4400 50  0001 C CNN
+	1    6600 4400
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6600 3350 6600 3250
