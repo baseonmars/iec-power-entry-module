@@ -18,19 +18,21 @@ This is my attempt at creating a reusable board
 - Schurter DC21 power inlet with power switch
 - Schurter 4301.1405 fuse drawer
 - V&K V80212MS02Q voltage selector switch
-- Littelfuse V150LA2PX2855 Varistor
-- EPCOS / TDK Inrush Current limiter\*
+- MOVs 7.5mm pitch, max diameter 12mm, max width 5mm \*
+- EPCOS / TDK Inrush Current limiter\* pitch 7.5mm, max diameter 12mm, max width 7mm
 
-* You must select an adequate inrush limiter for your target application.
+* You must select an adequate voltage and inrush limiter for your target application.
 
 ## Safety Note
 
 This schematic and associated designs and files are provided without any guarentee of safety. Please do your research and use at your own risk.
 
+This is very much a work in progress - this notice will be removed when I have greater confidence in the design.
+
 ## Preview
 
 <img src="https://i.imgur.com/auZikO8.png" alt="screenshot of pcb, schematic and rendered 3D model of power entry module" />
 
-## Thanks and of note
+## Things and of note
 
 This design in heavily inspirited by [Pete Millett's](https://www.pmillett.com) NuClassD power supply - Please check out his work and consider buying from him.
