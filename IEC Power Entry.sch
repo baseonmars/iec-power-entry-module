@@ -33,7 +33,7 @@ U 1 1 5F3C2FF6
 P 6250 3250
 F 0 "TH1" V 5960 3250 50  0000 C CNN
 F 1 "NTC Inrush Limiter" V 6051 3250 50  0000 C CNN
-F 2 "Base on Mars Additions:Thermistor_D8.5mm_W6mm_P5MM" H 6250 3300 50  0001 C CNN
+F 2 "Varistor:RV_Disc_D12mm_W7.1mm_P7.5mm" H 6250 3300 50  0001 C CNN
 F 3 "~" H 6250 3300 50  0001 C CNN
 	1    6250 3250
 	0    1    1    0   
@@ -44,21 +44,10 @@ U 1 1 5F3CD17B
 P 6600 3500
 F 0 "MOV1" H 6728 3546 50  0000 L CNN
 F 1 "MOV" H 6728 3455 50  0001 L CNN
-F 2 "Base on Mars Additions:V150LA2PX2855" V 6530 3500 50  0001 C CNN
+F 2 "Varistor:RV_Disc_D12mm_W5mm_P7.5mm" V 6530 3500 50  0001 C CNN
 F 3 "~" H 6600 3500 50  0001 C CNN
 	1    6600 3500
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x04 J1
-U 1 1 5F3D1820
-P 7800 3450
-F 0 "J1" V 7800 3100 50  0000 L CNN
-F 1 "Transformer Primary" V 7900 3200 50  0000 L TNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_1776266-4_1x4_P5mm_Horizonatal" H 7800 3450 50  0001 C CNN
-F 3 "~" H 7800 3450 50  0001 C CNN
-	1    7800 3450
-	1    0    0    1   
 $EndComp
 $Comp
 L Device:Thermistor_NTC TH2
@@ -66,7 +55,7 @@ U 1 1 5F3D568E
 P 6250 4150
 F 0 "TH2" V 6485 4150 50  0000 C CNN
 F 1 "NTC Inrush Limiter" V 6394 4150 50  0000 C CNN
-F 2 "Base on Mars Additions:Thermistor_D8.5mm_W6mm_P5MM" H 6250 4200 50  0001 C CNN
+F 2 "Varistor:RV_Disc_D12mm_W7.1mm_P7.5mm" H 6250 4200 50  0001 C CNN
 F 3 "~" H 6250 4200 50  0001 C CNN
 	1    6250 4150
 	0    -1   -1   0   
@@ -77,7 +66,7 @@ U 1 1 5F3D7E0C
 P 6600 4400
 F 0 "MOV2" H 6728 4446 50  0000 L CNN
 F 1 "MOV" H 6728 4355 50  0001 L CNN
-F 2 "Base on Mars Additions:V150LA2PX2855" V 6530 4400 50  0001 C CNN
+F 2 "Varistor:RV_Disc_D12mm_W5mm_P7.5mm" V 6530 4400 50  0001 C CNN
 F 3 "~" H 6600 4400 50  0001 C CNN
 	1    6600 4400
 	1    0    0    -1  
@@ -135,107 +124,82 @@ Wire Wire Line
 Wire Wire Line
 	6600 4600 7400 4600
 Wire Wire Line
-	4700 3450 4800 3450
-Wire Wire Line
 	4700 3250 5100 3250
 Wire Wire Line
-	4700 3650 4950 3650
-Wire Wire Line
-	4950 3650 4950 4600
-Wire Wire Line
 	4950 4600 6600 4600
-Connection ~ 4950 3650
-Wire Wire Line
-	4950 3650 5400 3650
 Connection ~ 6600 4600
 $Comp
 L Mechanical:MountingHole_Pad P2
 U 1 1 5F3FB5FA
-P 4000 4500
-F 0 "P2" V 4046 4650 50  0001 L CNN
-F 1 "Chassis Ground" V 4145 4503 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4000 4500 50  0001 C CNN
-F 3 "~" H 4000 4500 50  0001 C CNN
-	1    4000 4500
+P 3925 4925
+F 0 "P2" V 3971 5075 50  0001 L CNN
+F 1 "Chassis Ground" V 4070 4928 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 3925 4925 50  0001 C CNN
+F 3 "~" H 3925 4925 50  0001 C CNN
+	1    3925 4925
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad P1
 U 1 1 5F3FBEF4
-P 4000 4200
-F 0 "P1" V 4237 4203 50  0001 C CNN
-F 1 "MountingHole_Pad" V 4145 4203 50  0000 C CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad" H 4000 4200 50  0001 C CNN
-F 3 "~" H 4000 4200 50  0001 C CNN
-	1    4000 4200
+P 3925 4625
+F 0 "P1" V 4162 4628 50  0001 C CNN
+F 1 "MountingHole_Pad" V 4070 4628 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 3925 4625 50  0001 C CNN
+F 3 "~" H 3925 4625 50  0001 C CNN
+	1    3925 4625
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4100 4200 4800 4200
+	4025 4625 4700 4625
 Wire Wire Line
-	4800 3450 4800 4200
+	4025 4925 4475 4925
 Wire Wire Line
-	4100 4500 4800 4500
-Wire Wire Line
-	4800 4500 4800 4200
-Connection ~ 4800 4200
+	4700 4925 4700 4625
 $Comp
 L power:Earth_Protective #PWR02
 U 1 1 5F407098
-P 3325 3750
-F 0 "#PWR02" H 3325 3500 50  0001 C CNN
-F 1 "Earth_Protective" H 3325 3600 50  0001 C CNN
-F 2 "" H 3325 3750 50  0001 C CNN
-F 3 "~" H 3325 3750 50  0001 C CNN
-	1    3325 3750
+P 4475 4925
+F 0 "#PWR02" H 4475 4675 50  0001 C CNN
+F 1 "Earth_Protective" H 4475 4775 50  0001 C CNN
+F 2 "" H 4475 4925 50  0001 C CNN
+F 3 "~" H 4475 4925 50  0001 C CNN
+	1    4475 4925
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3325 3450 3600 3450
-$Comp
-L power:Earth #PWR03
-U 1 1 5F40A4DC
-P 3600 3850
-F 0 "#PWR03" H 3600 3600 50  0001 C CNN
-F 1 "Earth" H 3600 3700 50  0001 C CNN
-F 2 "" H 3600 3850 50  0001 C CNN
-F 3 "~" H 3600 3850 50  0001 C CNN
-	1    3600 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 3650 3600 3850
-Wire Wire Line
-	3700 3125 3325 3125
-Wire Wire Line
-	3325 3125 3325 3450
-Connection ~ 3325 3450
-Wire Wire Line
-	3325 3450 3325 3750
-$Comp
-L power:AC #PWR01
-U 1 1 5F40D02A
-P 3025 3775
-F 0 "#PWR01" H 3025 3675 50  0001 C CNN
-F 1 "AC" H 3025 4050 50  0000 C CNN
-F 2 "" H 3025 3775 50  0001 C CNN
-F 3 "" H 3025 3775 50  0001 C CNN
-	1    3025 3775
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3025 3250 3600 3250
-Wire Wire Line
-	3025 3250 3025 3750
 $Comp
 L DD21.0121.1111:DD21.0121.1111 P3
-U 1 1 5F4000A5
+U 1 1 5F496C93
 P 4100 3450
-F 0 "P3" H 4109 3935 50  0000 C CNN
-F 1 "DD21.0121.1111" H 4109 4026 50  0001 C CNN
-F 2 "Base on Mars Additions:SCHURTER-DD21.0121.1111" H 4109 3935 50  0001 C CNN
+F 0 "P3" H 4109 4027 50  0000 C CNN
+F 1 "DD21.0121.1111" H 4109 3936 50  0000 C CNN
+F 2 "Base on Mars Additions:SCHURTER-DD21.0121.1111" H 4100 3450 50  0001 L BNN
 F 3 "Schurter" H 4100 3450 50  0001 L BNN
 	1    4100 3450
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3650 4950 4600
+Wire Wire Line
+	4950 3650 5400 3650
+Connection ~ 4475 4925
+Wire Wire Line
+	4475 4925 4700 4925
+Connection ~ 4700 4625
+Connection ~ 4950 3650
+Wire Wire Line
+	4700 3650 4950 3650
+Wire Wire Line
+	4700 3450 4700 4625
+$Comp
+L Connector:Screw_Terminal_01x04 J1
+U 1 1 5F3D1820
+P 7800 3450
+F 0 "J1" V 7800 3100 50  0000 L CNN
+F 1 "Transformer Primary" V 7900 3200 50  0000 L TNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE-1546062-4_1x04_P7.50mm_Horizontal" H 7800 3450 50  0001 C CNN
+F 3 "~" H 7800 3450 50  0001 C CNN
+	1    7800 3450
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Sunday, 23 August 2020 at 22:08:33
+update=Wednesday, 26 August 2020 at 17:48:23
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=IEC Power Entry.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -38,7 +38,7 @@ MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=3
+TrackWidth1=2
 TrackWidth2=2
 TrackWidth3=3
 TrackWidth4=4
@@ -243,7 +243,7 @@ Enabled=0
 [pcbnew/Netclasses/Default]
 Name=Default
 Clearance=3
-TrackWidth=3
+TrackWidth=2
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
