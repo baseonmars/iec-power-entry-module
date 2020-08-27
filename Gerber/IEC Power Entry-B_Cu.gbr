@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,(5.1.6-0-10_14)*%
-%TF.CreationDate,2020-08-26T20:43:04+01:00*%
+%TF.CreationDate,2020-08-27T07:53:02+01:00*%
 %TF.ProjectId,IEC Power Entry,49454320-506f-4776-9572-20456e747279,1.0a*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L2,Bot*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.6-0-10_14)) date 2020-08-26 20:43:04*
+G04 Created by KiCad (PCBNEW (5.1.6-0-10_14)) date 2020-08-27 07:53:02*
 %MOMM*%
 %LPD*%
 G01*
@@ -41,11 +41,14 @@ G04 APERTURE LIST*
 %TA.AperFunction,Conductor*%
 %ADD19C,3.000000*%
 %TD*%
+%TA.AperFunction,Conductor*%
+%ADD20C,6.000000*%
+%TD*%
 G04 APERTURE END LIST*
 D10*
 %TO.P,P2,1*%
 %TO.N,Earth_Protective*%
-X162000000Y-139000000D03*
+X162000000Y-138000000D03*
 %TD*%
 D11*
 %TO.P,J1,4*%
@@ -98,7 +101,7 @@ X171100000Y-75200000D03*
 D17*
 %TO.P,P1,1*%
 %TO.N,Earth_Protective*%
-X137486000Y-139032000D03*
+X138500000Y-137000000D03*
 %TD*%
 D18*
 %TO.P,TH1,1*%
@@ -178,5 +181,9 @@ X171100000Y-75200000D02*
 X154900000Y-75200000D01*
 X136700000Y-82400000D02*
 X147750000Y-82400000D01*
+D20*
+%TO.N,Earth_Protective*%
+X138400000Y-137600000D02*
+X161600000Y-137600000D01*
 %TD*%
 M02*
