@@ -47,7 +47,7 @@
     (user_trace_width 4)
     (user_trace_width 5)
     (user_trace_width 6)
-    (trace_clearance 0)
+    (trace_clearance 3)
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.2)
@@ -112,7 +112,7 @@
   (net 8 Earth_Protective)
 
   (net_class Default "This is the default net class."
-    (clearance 0)
+    (clearance 3)
     (trace_width 2)
     (via_dia 0.8)
     (via_drill 0.4)
@@ -268,6 +268,7 @@
     (descr "Mounting Hole 2.2mm, M2")
     (tags "mounting hole 2.2mm m2")
     (path /5F3FB5FA)
+    (clearance 6)
     (attr virtual)
     (fp_text reference P2 (at 0 -4.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -542,6 +543,7 @@
     (descr "Mounting Hole 3.5mm")
     (tags "mounting hole 3.5mm")
     (path /5F3FBEF4)
+    (clearance 6)
     (attr virtual)
     (fp_text reference P1 (at 0 -4.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
